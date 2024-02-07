@@ -3,9 +3,9 @@ class SquareController < ApplicationController
     render({ :template => "pages_template/square_new"})
   end
 
-  def square_result
+  def square_results
     @input = params["number"]
     @outcome = (@input.to_f) ** 2
-    render({ :template => "pages_template/square_result"})
+    render({ :template => "pages_template/square_results"})
   end
 end

@@ -1,4 +1,10 @@
-<form action="/square/results">
+<style>
+  .square_form > * {
+    display: block;
+  }
+</style>
+
+<form action="/square/results" class="square_form">
   <label for="user_number">Enter a number</label>
   <input type="text" name="number" id="user_number" placeholder="What number do you want to take the square of?">
   <button>Calculate square</button>
